@@ -9,12 +9,25 @@ class CountiesDataSource {
 
             countriesList.add(
                 Country(
+                    name = "Palestine",
+                    city = "Jerusalem",
+                    numberOfDays = "5 Days ",
+                    price = "JD 222",
+                    image = R.drawable.palestine,
+                    rating = 4,
+                    imageBackground = R.drawable.palestine1
+                )
+            )
+
+            countriesList.add(
+                Country(
                     name = "Jordan",
                     city = "Petra",
                     numberOfDays = "5 Days ",
                     price = "JD 222",
                     image = R.drawable.jordan,
-                    rating = 4
+                    rating = 4,
+                    imageBackground = R.drawable.jordan1
                 )
             )
 
@@ -25,65 +38,46 @@ class CountiesDataSource {
                     numberOfDays = "4 Days ",
                     price = "$ 469",
                     image = R.drawable.italy,
-                    rating = 3
+                    rating = 3,
+                    imageBackground = R.drawable.italy1
                 )
             )
 
             countriesList.add(
                 Country(
-                    name = "Jordan",
-                    city = "Petra",
+                    name = "Spain",
+                    city = "Madrid",
                     numberOfDays = "5 Days ",
                     price = "JD 222",
-                    image = R.drawable.jordan,
-                    rating = 4
+                    image = R.drawable.spain,
+                    rating = 4,
+                    imageBackground = R.drawable.spain1
                 )
             )
 
             countriesList.add(
                 Country(
-                    name = "Italy",
-                    city = "Rome",
+                    name = "Qatar",
+                    city = "Qatar",
                     numberOfDays = "4 Days ",
                     price = "$ 469",
-                    image = R.drawable.italy,
-                    rating = 3
+                    image = R.drawable.qatar,
+                    rating = 3,
+                    imageBackground = R.drawable.qatar1
                 )
             )
 
             countriesList.add(
                 Country(
-                    name = "Jordan",
-                    city = "Petra",
+                    name = "Germany",
+                    city = "Berlin",
                     numberOfDays = "5 Days ",
                     price = "JD 222",
-                    image = R.drawable.jordan,
-                    rating = 4
+                    image = R.drawable.germany,
+                    rating = 4,
+                    imageBackground = R.drawable.germany1
                 )
             )
-
-            countriesList.add(
-                Country(
-                    name = "Italy",
-                    city = "Rome",
-                    numberOfDays = "4 Days ",
-                    price = "$ 469",
-                    image = R.drawable.italy,
-                    rating = 3
-                )
-            )
-
-            countriesList.add(
-                Country(
-                    name = "Jordan",
-                    city = "Petra",
-                    numberOfDays = "5 Days ",
-                    price = "JD 222",
-                    image = R.drawable.jordan,
-                    rating = 4
-                )
-            )
-
             return countriesList
         }
 

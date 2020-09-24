@@ -10,5 +10,6 @@ data class Country(
     val numberOfDays: String,
     val price: String,
     val rating: Int,
-    val image: Int // because the images located in drawable files not an url's from internet
+    val image: Int, // because the images located in drawable files not an url's from internet
+    val imageBackground: Int // because the images located in drawable files not an url's from internet
 ) : Parcelable

@@ -2,10 +2,10 @@ package com.example.travelapp
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_country_details.*
@@ -36,9 +36,12 @@ class CountryDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         // render data into views
         Glide.with(this).load(country.image).into(countryDetailsFragment_imageView)
+        countryDetailsFragment_imageView.setBackgroundResource(country.imageBackground)
+
         countryDetailsFragment_nameTv.text = country.name
         countryDetailsFragment__cityTv.text = country.city
-        countryDetailsFragment_numberOfDaysAndPriceTv.text = "${country.numberOfDays} ${country.price}"
+        countryDetailsFragment_numberOfDaysAndPriceTv.text =
+            "${country.numberOfDays} ${country.price}"
         countryDetailsFragment_tottalPriceTv.text = "For ${country.numberOfDays} = ${country.price}"
 
         backImageView.setOnClickListener {
